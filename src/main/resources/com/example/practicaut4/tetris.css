@@ -1,0 +1,58 @@
+/* Estilo para el tablero */
+#tablero {
+    -fx-background-color: #000000; /* Fondo negro */
+    -fx-grid-lines-visible: false;  /* Mostrar las líneas de la cuadrícula */
+    -fx-border-color: #FFFFFF;  /* Borde blanco para el tablero */
+    -fx-border-width: 2px; /* Borde del tablero */
+}
+
+/* Estilo para las celdas del tablero */
+.cell {
+    -fx-stroke: #666666; /* Bordes grises para las celdas */
+    -fx-stroke-width: 1px; /* Ancho del borde */
+    -fx-fill: #000000; /* Fondo negro por defecto para las celdas vacías */
+}
+
+/* Estilo para las piezas */
+.cell-i { -fx-fill: #00FFFF; } /* Pieza I (color cian) */
+.cell-j { -fx-fill: #0000FF; } /* Pieza J (color azul) */
+.cell-l { -fx-fill: #FF7F00; } /* Pieza L (color naranja) */
+.cell-o { -fx-fill: #FFFF00; } /* Pieza O (color amarillo) */
+.cell-s { -fx-fill: #00ff00; } /* Pieza S (color verde) */
+.cell-t { -fx-fill: #800080; } /* Pieza T (color morado) */
+.cell-z { -fx-fill: #FF0000; } /* Pieza Z (color rojo) */
+
+/* Estilo del fondo de la interfaz */
+.background {
+    -fx-background-color: #2e2e2e; /* Fondo gris oscuro */
+}
+
+/* Estilo de las etiquetas de nivel y puntuación */
+.label {
+    -fx-font-size: 18px;
+    -fx-font-weight: bold;
+    -fx-text-fill: white;
+}
+
+#nivel, #puntuacion {
+    -fx-font-size: 14px;
+    -fx-text-fill: white;
+}
+
+/* Estilo del contenedor del panel derecho (nivel y puntuación) */
+.right-pane {
+    -fx-background-color: #333;
+    -fx-padding: 10px;
+    -fx-spacing: 10px;
+}
+
+/* Estilo de las celdas cuando son ocupadas por una pieza */
+.occupied {
+    -fx-opacity: 1.0;
+}
+
+/* Estilo del fondo cuando una línea está completa */
+.line-complete {
+    -fx-fill: #444444;  /* Color oscuro para las líneas completas */
+}
+

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.collections.FXCollections?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="467.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.practicaut4.RegistroController">
+   <children>
+      <Pane layoutX="12.0" layoutY="16.0" prefHeight="467.0" prefWidth="443.0" style="-fx-background-color: #f0f8ff; -fx-border-color: #98c9f4;">
+         <children>
+            <Text fx:id="registrarse" fill="#8d6cc7" layoutX="14.0" layoutY="38.0" stroke="#a44c4c" strokeType="OUTSIDE" strokeWidth="0.0" text="Registrate">
+               <font>
+                  <Font name="Arial Bold" size="26.0" />
+               </font>
+            </Text>
+            <TextField fx:id="nombre" layoutX="37.0" layoutY="69.0" prefHeight="29.0" prefWidth="284.0" promptText="Nombre" style="-fx-background-radius: 100;" />
+            <TextField fx:id="apellido" layoutX="37.0" layoutY="120.0" prefHeight="29.0" prefWidth="284.0" promptText="Apellidos" style="-fx-background-radius: 100;" />
+            <DatePicker fx:id="fechaNacimiento" layoutX="37.0" layoutY="174.0" prefHeight="26.0" prefWidth="298.0" promptText="Fecha de nacimiento" />
+            <RadioButton fx:id="hombre" layoutX="78.0" layoutY="216.0" mnemonicParsing="false" text="Hombre">
+               <toggleGroup>
+                  <ToggleGroup fx:id="a" />
+               </toggleGroup>
+            </RadioButton>
+            <RadioButton fx:id="mujer" layoutX="250.0" layoutY="216.0" mnemonicParsing="false" text="Mujer" toggleGroup="$a" />
+            <PasswordField id="password" fx:id="password" layoutX="37.0" layoutY="292.0" prefHeight="26.0" prefWidth="284.0" promptText="Contraseña" />
+            <Label fx:id="fuerza" layoutX="363.0" layoutY="265.0" />
+            <TextField fx:id="correo" layoutX="37.0" layoutY="252.0" prefHeight="26.0" prefWidth="365.0" promptText="Email" style="-fx-background-radius: 100;" />
+            <CheckBox fx:id="condiciones" layoutX="25.0" layoutY="338.0" mnemonicParsing="false" text="Acepto las Condiciones del servicio y la Política de privacidad" />
+            <Text fx:id="yeu" layoutX="133.0" layoutY="430.0" strokeType="OUTSIDE" strokeWidth="0.0" text="¿Ya eres usuario?" />
+            <Hyperlink fx:id="inicio" layoutX="238.0" layoutY="413.0" onMouseClicked="#iniciodesesion" text="Inicia sesión" textFill="#8d6cc7" />
+            <ComboBox fx:id="idiomaComboBox" layoutX="346.0" layoutY="16.0" onMouseClicked="#cambiarIdioma" prefHeight="26.0" prefWidth="96.0" promptText="Español" style="-fx-background-color: #f0f8ff;">
+               <items>
+                  <FXCollections fx:factory="observableArrayList">
+                     <String fx:value="Español" />
+                     <String fx:value="English" />
+                  </FXCollections>
+               </items>
+            </ComboBox>
+            <Button fx:id="registrar" layoutX="156.0" layoutY="372.0" mnemonicParsing="false" onMouseClicked="#registroValido" style="-fx-background-color: #8d6cc7; -fx-background-radius: 10;" text="Confirmar registro" textFill="WHITE" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

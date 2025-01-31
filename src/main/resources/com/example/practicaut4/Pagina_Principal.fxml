@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1280.0" style="-fx-background-image: &quot;tetris.jpg;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.practicaut4.PaginaPrincipal">
+   <children>
+      <ImageView fitHeight="806.0" fitWidth="1423.0" layoutX="-1.0" layoutY="-1.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@8866b25a23afb5185612095ffc57eca3.gif" />
+         </image></ImageView>
+      <Text fx:id="tetris" fill="#8d6cc7" layoutX="485.0" layoutY="222.0" stroke="#e8dede" strokeType="OUTSIDE" strokeWidth="2.0" text="Tetris 99">
+         <font>
+            <Font name="Tetris" size="60.0" />
+         </font>
+      </Text>
+      <Button fx:id="jugar" focusTraversable="true" layoutX="455.0" layoutY="324.0" mnemonicParsing="false" onMouseClicked="#jugar" prefHeight="26.0" prefWidth="349.0" style="-fx-background-color: white; -fx-background-radius: 10;" text="Jugar" />
+      <Button fx:id="salir" focusTraversable="true" layoutX="455.0" layoutY="374.0" mnemonicParsing="false" onMouseClicked="#salir" prefHeight="26.0" prefWidth="349.0" style="-fx-background-color: white; -fx-background-radius: 10;" text="Salir" />
+      <ImageView fx:id="info" fitHeight="43.0" fitWidth="38.0" layoutX="43.0" layoutY="27.0" onMouseClicked="#abrirAyuda" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@3356179.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

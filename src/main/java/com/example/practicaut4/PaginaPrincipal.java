@@ -40,6 +40,9 @@ public class PaginaPrincipal {
      */
     protected ResourceBundle resources;
 
+    /**
+     * Contiene la imagen que permite abrir html con la ayuda
+     */
     @FXML
     protected ImageView info;
 
@@ -123,6 +126,11 @@ public class PaginaPrincipal {
         Stage currentStage = (Stage) ((Button) event.getSource()).getScene().getWindow();
         currentStage.close();
     }
+
+    /**
+     * Este método permite abrir el manual de usuario online para saber como jugar
+     * @param event Recoge un evento de ratón
+     */
 
     @FXML
     private void abrirAyuda(MouseEvent event) {
